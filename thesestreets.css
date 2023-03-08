@@ -1,0 +1,350 @@
+/*this is just a blank css file*/
+/*this is just a change to the file  to see if it activates WIP*/
+/*another change, this time after add, just to see what happens, if anything*/
+/*this is a change to see if git will execute a commit...because this file has changed*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+html{
+
+
+}
+body {
+	overflow: hidden;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	/*background-size: cover;*/
+	
+
+	flex-direction: column;
+	/*object-fit: cover;*/
+	
+	height: 96vh;
+	width: 96vw;
+   /* clip-path: inset(20px 50px 10px 0 round 50px);*/
+	
+	/*object-position: 55%;*/
+	/*transform: scale(0.5) translate(0, 5%);*/
+	
+	/*background-size: contain;*/  /*this maintains the aspect ratio. It adds white space above and below in order to do this. The sides dont run over it and crop it on resize*/
+	/*clip-path: inset(5% 20% 15% 10%);*/
+	/*background-size: 100%;*/ /*same result as background-size: contain;*/
+	/*background-color: green;*/
+	display:flex;
+}
+
+.land_page_container{
+
+	/*background-size: cover;*/
+	display:flex;
+	/*width: auto;*/
+	/*height: auto;*/
+	margin: 0;
+	/*visibility:hidden;*/
+	object-fit: cover;
+}
+
+.land_page_background_img
+{
+   height: -webkit-fill-available;
+   left: 0;
+   margin: 0;
+   min-height: 100%;
+   min-width: 1804px; /*This is necessary because it allows the backgrounf map to be cropped from the right when screen width is reduced and thus avoids massive horizontal distortion*/
+   padding: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: -1;
+}
+
+.prague_page_container{
+	display:flex;
+	height: 95vh;
+	width: 96vw;
+	background-size: cover;
+	flex-direction: column;
+}
+
+.prague_page_background_img
+{
+	display:flex;
+  height: -webkit-fill-available;/*this maintains the full height of the image for all screen widths. It enables the image to be horizontally distorted though */
+  left: 0;
+  margin: 0;
+  min-height: 100%;
+  /* min-width: 1604px;*//*the cuts off the right hand side as the screen is narrowed. It's terrible!!  BUT!! if if I could get the cutting to come in from both sides???? then Bingo!!*/
+	/* min-width: 100vw;*/
+  padding: 0;
+  position: fixed;
+  top: 0;
+  /*width: 100%;*/
+	width:1920px;
+  z-index: -1;
+	background-repeat: no-repeat;
+	 
+	justify-content:center;
+	align-items: center;
+	
+	overflow-x: hidden;
+}
+
+.tour_details_container{
+	display: none;
+	flex-direction: column;
+	height: 96vh;
+	width: 96vw;
+	align-items: center; /*works on the cross axis, in this case that's vertical*/
+	justify-content:center;
+	background-color: white;
+	border-radius: 10px;
+	margin-left: 0px;
+}
+
+.second_row, .third_row, .fourth_row, .fifth_row{
+	display:flex;
+	/*height: 20%;*/
+    width: 80%;
+    /*border: 1px solid black;*/
+		flex:1;
+	align-items: center; /*works on the cross axis, in this case that's vertical*/
+	justify-content:left;
+}
+
+.tour_dtls_second_row, .tour_dtls_third_row, .tour_dtls_fourth_row, .tour_dtls_fifth_row{
+	display:flex;
+	flex-direction: column;
+	/*background-color: rgb(211, 211, 211);*/
+	width: 80%;
+	flex:1;
+	align-items: center;
+	justify-content:left;
+	
+}
+
+.tour_dtls_second_row_p{
+	display:flex;
+	flex-direction: column;
+	width: 80%;
+	/*flex:1;*/ /*has no obvious effect BUT check it out*/
+	align-items: flex-start;
+	justify-content:left;
+}
+
+.tour_dtls_third_row_p{
+	display:flex;
+	flex-direction: column;
+	width: 80%;
+	/*flex:1;*/ /*has no obvious effect BUT check it out*/
+	align-items: flex-start;
+	justify-content:left;
+}
+
+.tour_dtls_fourth_row_p{
+	display:flex;
+	flex-direction: column;
+	width: 80%;
+	/*flex:1;*/ /*has no obvious effect BUT check it out*/
+	align-items: flex-start;
+	justify-content:left;
+}
+
+.tour_dtls_fifth_row_p{
+	display:flex;
+	flex-direction: column;
+	width: 80%;
+	/*flex:1;*/ /*has no obvious effect BUT check it out*/
+	align-items: flex-start;
+	justify-content:left;
+}
+
+
+
+.tour_dtls_first_row{
+	display:flex;
+	flex-direction: row;
+	background-color: white;
+  width: inherit;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+.first_row_box{
+	display:flex;
+
+	justify-content: center;
+  align-items: center;
+	/*background-color: #d2d2db;*//*light grey*/
+	/*height: 100%;*/
+  width: -webkit-fill-available;
+  /*border: 1px solid white;	*/
+}
+
+
+.close_x{
+	display: flex;
+	color: #d2d2db;/*light grey*/;
+	/*font-size:3vw;*/
+	font-size: x-large;
+	margin-top: 12px;
+	margin-bottom:12px;	
+	margin-right: 12px;
+}
+
+.first_row_box1{
+	background-color: white;
+}
+
+
+.first_row_box3{
+	display: flex;
+	flex-basis: 12%;
+	justify-content: center;
+  align-items: center;
+}
+
+
+.land_center_container{
+	display: flex;
+	height: 95vh;
+	width: 96vw;
+	overflow: hidden;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;  /* the value 'column' here makes align-items align items w.r.t. the vertical axis and justify-content align items w.r.t. the horizontal axis */
+	position: fixed;
+	/*background-color: aliceblue;*/
+}
+
+.prague_quote_span{
+	display: flex;
+	width: 40vw;
+	height: 10vh;
+	overflow: hidden;
+	font-size: 15px;
+	color: black;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;  /* the value 'column' here makes align-items align items w.r.t. the vertical axis and justify-content align items w.r.t. the horizontal axis */
+	/*background-color: cornflowerblue;*/
+}
+
+.prague_center_container{
+	display: flex;
+	width: 96vw;
+	height: 70vh;
+	overflow: hidden;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;  /* the value 'column' here makes align-items align items w.r.t. the vertical axis and justify-content align items w.r.t. the horizontal axis */
+	/*background-color: cornflowerblue;*/
+}
+
+.sidebar{
+	display:flex;
+	width: 5vw;
+	height: 100vh;
+	
+	justify-content:center;
+	align-items: center;
+
+}
+
+.sidebar p{
+	font-family: 'Raleway', sans-serif;
+	background-color:#0d850d;/*green*/
+	font-size: calc(8px + 1vw);
+  writing-mode: vertical-rl;/* vertical text */
+	transform:scale(-1);/* vertical text */
+	word-spacing: 5vh;
+	color: white;
+	padding-bottom: 10px;
+	padding-top:10px;
+	
+}
+
+.title_container{
+  height: 15vh;
+	width: 80vw;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+background: transparent;
+	/*background-color:white;*/
+	border-radius: 5px;	
+
+	} 
+
+.site_name{
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-size: 8vw;*/
+	font-size: calc(25px + 3vw);
+	font-weight: bold;
+	font-style: italic;	
+	color: #031595;
+	margin: 0;
+  padding: 0;
+}
+
+.slogan{
+	/*font: 22px Arial, Helvetica, sans-serif;*/
+	font-family: 'Lobster', cursive;
+	font-size: calc(12px + 1.5vw);
+	color: rgba(63, 81, 181, 1);
+	margin: 0;
+  padding: 0;
+	
+}
+.city_container{
+	display: flex;
+	flex-direction: column;
+	height: 70vh;
+	width: 70vw;
+	align-items: center; /*works on the cross axis, in this case that's vertical*/
+	justify-content:center;
+	}
+	
+.tour_menu_container{
+	display: flex;
+	flex-direction: column;
+	height: 70vh;
+	width: 50vw;
+	align-items: center; /*works on the cross axis, in this case that's vertical*/
+	justify-content:center;
+	}
+
+.city_prague, .city_dresden, .city_usti{
+	display: flex;
+	align-items: center; /*works on the cross axis, in this case that's vertical*/
+	justify-content:center;
+	
+	width: 30vmax;
+	height: 10vh;
+	background-color:white;
+	border-radius: 5px;	
+	/*font-size: calc(15px + 1vw);*/
+	/*font-size: 25px;*/
+	}
+
+.tour_dtls, .prices, .guide, .contact_dtls  {
+	display: flex;
+	align-items: center; /*works on the cross axis, in this case that's vertical*/
+	justify-content:center;
+	
+	width: 30vmax;
+	height: 10vh;
+	background-color:white;
+	border-radius: 5px;	
+	/*font-size: calc(15px + 1vw);*/
+	/*font-size: 25px;*/
+	}
+	
+
+
+
+
+
+

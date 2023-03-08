@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml ">
 <html lang="en">
-<!--        localhost/15zoom_flex/
+<!--        localhost/theseStreets/index.html/
 <!-- phone 192.168.8.100/15zoom -->
 <!-- phone 192.168.8.102/15zoom      the router changed it from 192.168.8.100 to 192.168.8.102 -->
 <head>
@@ -10,30 +10,75 @@
 	-->
 	<!--
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	-->
-	
-	
-	<title>15Zoom</title>
+	-->	
+	<title>theseStreets</title>
 	<meta charset="UTF-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="15zoom_flex.css">
+	<link rel="stylesheet" type="text/css" href="thesestreets.css">
 
 <!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
-
-
-
-	
-	<meta name="mobile-web-app-capable" content="yes">
-	
-
-	
-	
+	<meta name="mobile-web-app-capable" content="yes">	
 </head>
 
 <body>
-<p>Hello from theseStreets</p>
-<p>this is a change after the initial commit using git bash</p>
+
+<div class="land_page_container">
+	<img class="land_page_background_img" src="land_page_map.jpg" border="0" alt="">
+	<!-- <div class="sidebar"><p>city walking tours</p></div> -->
+	<div class='land_center_container'>
+		 <div class="title_container">
+			<p class="site_name">theseStreets.city</p>
+			<p class="slogan">these streets...their stories....</p>
+		</div>
+
+		<div class='city_container'>
+			<p class="city_prague">Prague</p>
+			<p class="city_usti">Ústí nad Labem</p>
+			<p class="city_dresden">Dresden</p>
+		</div>
+	</div>
+</div>
+
+<div class="prague_page_container">
+	<img class="prague_page_background_img" src="charles_bridge2.jpg" border="0" alt="">
+	<span class="prague_quote_span">"..footfall tapping secrecies of stone.."</span>
+	<div class='prague_center_container'>	
+		<div class='tour_menu_container'>
+			<p class="tour_dtls">Tour details</p>
+			<p class="prices">Is it free?</p>
+			<p class="guide">Meet your guide</p>
+			<p class="contact_dtls">Contact details</p>		
+		</div>
+		
+		<div class="tour_details_container">
+			<div class="tour_dtls_first_row">
+				<div class="first_row_box first_row_box1">Tour details</div>
+				<div class="first_row_box first_row_box3"><p class="close_x">&#x2573;</p></div>	
+			</div>
+			<div class="tour_dtls_second_row"><p class="tour_dtls_second_row_p"><span>Start Time: The tour starts each morning at 10a.m.</span></br></br><span>Meeting point: [somewhere] <span></p></div>
+			<div class="tour_dtls_third_row"><p class="tour_dtls_third_row_p">Third row stuff</p></div>
+			<div class="tour_dtls_fourth_row"><p class="tour_dtls_fourth_row_p">Fourth row stuff</p></div>
+			<div class="tour_dtls_fifth_row"><p class="tour_dtls_fourth_row_p">Fifth row stuff</p></div>	
+
+<!-- <a href="https://wa.me/">Send message</a>  -->
+<a href="whatsapp://send?text=Hello%20World!">Hello, world!</a> 
+<!--<a href="whatsapp://send?text=my message&phone=+420774120878&abid=+420774120878">Whatsapp me please</a> -->
+<!--<a aria-label="Chat on WhatsApp" href="https://wa.me/420774120878"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" />   -->
+<!-- <a href="http://wa.me/send?phone=420774120878">Try this</a> -->
+			
+		</div>
+		
+		
+	</div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="jquery-3.6.0.js" defer charset="UTF-8"></script>
+<script type="text/javascript" src="thesestreets.js" defer charset="UTF-8"></script>
 
 </body>
 </html>
