@@ -15,7 +15,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-	/*background-size: cover;*/
+	background-size: cover;
 	
 
 	flex-direction: column;
@@ -48,7 +48,11 @@ body {
 
 .land_page_background_img
 {
-   height: -webkit-fill-available;
+  /*height: -webkit-fill-available;*/
+	 
+	 height: inherit;
+	 	display:flex;
+	 	 
    left: 0;
    margin: 0;
    min-height: 100%;
@@ -71,7 +75,8 @@ body {
 .prague_page_background_img
 {
 	display:flex;
-  height: -webkit-fill-available;/*this maintains the full height of the image for all screen widths. It enables the image to be horizontally distorted though */
+  /*height: -webkit-fill-available;*//*this maintains the full height of the image for all screen widths. It enables the image to be horizontally distorted though */
+	height: inherit;
   left: 0;
   margin: 0;
   min-height: 100%;
