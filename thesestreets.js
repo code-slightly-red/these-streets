@@ -10,7 +10,31 @@ $('.city_prague').on('click', function(e){
 	$('.land_page_container').css('display', 'none');
 	$('.prague_page_container').css('display', 'flex');
 	$('.prague_center_container').css('display', 'flex');
+	
 	});
+
+$('.city_cork').on('click', function(e){
+	$('.land_page_container').css('display', 'none');
+	$('.cork_page_container').css('display', 'flex');
+	//$('.prague_center_container').css('display', 'flex');
+	});
+
+$('.close_x_cork').on('click', function(e){
+	$('.land_page_container').css('display', 'flex');
+	$('.cork_page_container').css('display', 'none');
+	$('.tour_details_container').css('display', 'none');
+	$('.tour_menu_container').css('display', 'flex');
+	//$('.prague_center_container').css('display', 'flex');
+	});	
+	
+$('.close_x_prague').on('click', function(e){
+	$('.land_page_container').css('display', 'flex');
+	$('.prague_page_container').css('display', 'none');
+	$('.tour_details_container').css('display', 'none');
+		$('.tour_menu_container').css('display', 'flex');
+	//$('.prague_center_container').css('display', 'flex');
+	});	
+	
 	
 $(window).on('resize', function(){
 	if($(window).width()>530){

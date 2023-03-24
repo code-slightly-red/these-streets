@@ -35,6 +35,12 @@ body {
 	display:flex;
 }
 
+.domain_for_sale{
+		font-family: Arial, Helvetica, sans-serif;
+	/*font-size: 8vw;*/
+	font-size: calc(12px + 3vw);
+}
+
 .land_page_container{
 
 	/*background-size: cover;*/
@@ -46,17 +52,17 @@ body {
 	object-fit: cover;
 }
 
-.land_page_background_img
+.cork_page_background_img
 {
   /*height: -webkit-fill-available;*/
 	 
 	 height: inherit;
-	 	display:flex;
+	 display:flex;
 	 	 
    left: 0;
    margin: 0;
    min-height: 100%;
-   min-width: 1804px; /*This is necessary because it allows the backgrounf map to be cropped from the right when screen width is reduced and thus avoids massive horizontal distortion*/
+   /*min-width: 1804px;*/ /*This is necessary because it allows the backgrounf map to be cropped from the right when screen width is reduced and thus avoids massive horizontal distortion*/
    padding: 0;
    position: fixed;
    top: 0;
@@ -64,8 +70,20 @@ body {
    z-index: -1;
 }
 
+.cork_page_container{
+	/*display:flex;*/
+	display: none;
+	height: 95vh;
+	width: 96vw;
+	background-size: cover;
+	flex-direction: column;
+	
+}
+
+
 .prague_page_container{
-	display:flex;
+	/*display:flex;*/
+	display:none;
 	height: 95vh;
 	width: 96vw;
 	background-size: cover;
@@ -173,6 +191,8 @@ body {
 	background-color: white;
   width: inherit;
   border-bottom: 1px solid lightgrey;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 
 }
 
@@ -184,7 +204,8 @@ body {
 	/*background-color: #d2d2db;*//*light grey*/
 	/*height: 100%;*/
   width: -webkit-fill-available;
-  /*border: 1px solid white;	*/
+  border-top-left-radius: 10px;
+
 }
 
 
@@ -197,6 +218,8 @@ body {
 	margin-bottom:12px;	
 	margin-right: 12px;
 }
+
+
 
 .first_row_box1{
 	background-color: white;
@@ -223,7 +246,15 @@ body {
 	/*background-color: aliceblue;*/
 }
 
-.prague_quote_span{
+.city_page_top_container{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: space-between;
+    width:100%;
+}
+
+.quote_span{
 	display: flex;
 	width: 40vw;
 	height: 10vh;
@@ -236,13 +267,48 @@ body {
 	/*background-color: cornflowerblue;*/
 }
 
+.close_x_cork{
+	display: flex;
+	-webkit-text-stroke-width: thick;
+	color: #d2d2db;/*light grey*/;
+	/*font-size:3vw;*/
+	font-size: x-large;
+	margin-top: 12px;
+	margin-bottom:12px;	
+	margin-right: 12px;
+}
+
+.close_x_prague{
+	display: flex;
+	-webkit-text-stroke-width: thick;
+	color: #d2d2db;/*light grey*/;
+	/*font-size:3vw;*/
+	font-size: x-large;
+	margin-top: 12px;
+	margin-bottom:12px;	
+	margin-right: 12px;
+}
+
+
+
 .prague_center_container{
 	display: flex;
 	width: 96vw;
 	height: 70vh;
 	overflow: hidden;
 	justify-content:center;
-	align-items: center;
+	align-items: end;
+	flex-direction: column;  /* the value 'column' here makes align-items align items w.r.t. the vertical axis and justify-content align items w.r.t. the horizontal axis */
+	/*background-color: cornflowerblue;*/
+}
+
+.cork_center_container{
+	display: flex;
+	width: 96vw;
+	height: 70vh;
+	overflow: hidden;
+	justify-content:center;
+	align-items: end;
 	flex-direction: column;  /* the value 'column' here makes align-items align items w.r.t. the vertical axis and justify-content align items w.r.t. the horizontal axis */
 	/*background-color: cornflowerblue;*/
 }
@@ -321,26 +387,46 @@ background: transparent;
 	justify-content:center;
 	}
 
-.city_prague, .city_dresden, .city_usti{
+.city_cork{
 	display: flex;
 	align-items: center; /*works on the cross axis, in this case that's vertical*/
-	justify-content:center;
-	
+	justify-content:center;	
 	width: 30vmax;
 	height: 10vh;
-	background-color:white;
+	background-color:rgb(197, 244, 54);
 	border-radius: 5px;	
-	/*font-size: calc(15px + 1vw);*/
-	/*font-size: 25px;*/
 	}
+	
+.city_dublin{
+	display: flex;
+	align-items: center; /*works on the cross axis, in this case that's vertical*/
+	justify-content:center;	
+	width: 30vmax;
+	height: 10vh;
+	background-color:rgb(3, 169, 244);
+	border-radius: 5px;	
+	}
+
+.city_prague{
+	display: flex;
+	align-items: center; /*works on the cross axis, in this case that's vertical*/
+	justify-content:center;	
+	width: 30vmax;
+	height: 10vh;
+	background-color:rgb(255, 152, 0);
+	border-radius: 5px;	
+	}	
+	
+	
+	
 
 .tour_dtls, .prices, .guide, .contact_dtls  {
 	display: flex;
 	align-items: center; /*works on the cross axis, in this case that's vertical*/
 	justify-content:center;
 	
-	width: 30vmax;
-	height: 10vh;
+	width: 24vmax;
+	height: 6vh;
 	background-color:white;
 	border-radius: 5px;	
 	/*font-size: calc(15px + 1vw);*/
